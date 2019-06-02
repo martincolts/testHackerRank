@@ -1,45 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.044000000000000004" tests="7" failures="3">
-  <testsuite name="Root Suite" timestamp="2019-06-02T19:12:58" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="0.04700000000000001" tests="7" failures="1">
+  <testsuite name="Root Suite" timestamp="2019-06-02T19:41:19" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="test" timestamp="2019-06-02T19:12:58" tests="0" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="0" time="0">
+  <testsuite name="test" timestamp="2019-06-02T19:41:19" tests="0" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="0" time="0">
   </testsuite>
-  <testsuite name="healthcheck" timestamp="2019-06-02T19:12:58" tests="1" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="0" time="0.021">
+  <testsuite name="healthcheck" timestamp="2019-06-02T19:41:19" tests="1" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="0" time="0.021">
     <testcase name="test healthcheck success" time="0.021" classname="success">
     </testcase>
   </testsuite>
-  <testsuite name="error handler" timestamp="2019-06-02T19:12:58" tests="3" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="0" time="0.016">
-    <testcase name="test error handler 404" time="0.012" classname="404">
+  <testsuite name="error handler" timestamp="2019-06-02T19:41:19" tests="3" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="0" time="0.015">
+    <testcase name="test error handler 404" time="0.011" classname="404">
     </testcase>
     <testcase name="test error handler 400 empty body" time="0.002" classname="400 empty body">
     </testcase>
     <testcase name="test error handler 400 body error" time="0.002" classname="400 body error">
     </testcase>
   </testsuite>
-  <testsuite name="endpoint" timestamp="2019-06-02T19:12:58" tests="3" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="3" time="0.007">
-    <testcase name="test endpoint 200" time="0.002" classname="200">
-      <failure message="Not Found" type="Error"><![CDATA[Error: Not Found
-    at Test.Request.callback (node_modules/superagent/lib/node/index.js:626:17)
-    at node_modules/superagent/lib/node/index.js:795:18
-    at IncomingMessage.<anonymous> (node_modules/superagent/lib/node/parsers/json.js:16:7)
-    at endReadableNT (_stream_readable.js:1129:12)
-    at process.internalTickCallback (internal/process/next_tick.js:72:19)]]></failure>
+  <testsuite name="endpoint" timestamp="2019-06-02T19:41:19" tests="3" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="1" time="0.011000000000000001">
+    <testcase name="test endpoint 200" time="0.003" classname="200">
     </testcase>
-    <testcase name="test endpoint cache" time="0.003" classname="cache">
-      <failure message="Not Found" type="Error"><![CDATA[Error: Not Found
-    at Test.Request.callback (node_modules/superagent/lib/node/index.js:626:17)
-    at node_modules/superagent/lib/node/index.js:795:18
-    at IncomingMessage.<anonymous> (node_modules/superagent/lib/node/parsers/json.js:16:7)
-    at endReadableNT (_stream_readable.js:1129:12)
-    at process.internalTickCallback (internal/process/next_tick.js:72:19)]]></failure>
+    <testcase name="test endpoint cache" time="0.006" classname="cache">
+      <failure message="Expected values to be loosely deep-equal:
+
+false
+
+should equal
+
+true" type="AssertionError [ERR_ASSERTION]"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:
+
+false
+
+should equal
+
+true
+    at Context.it (test/unit/PositionServiceTest.js:113:14)
+    at process.internalTickCallback (internal/process/next_tick.js:77:7)]]></failure>
     </testcase>
     <testcase name="test endpoint async save" time="0.002" classname="async save">
-      <failure message="Not Found" type="Error"><![CDATA[Error: Not Found
-    at Test.Request.callback (node_modules/superagent/lib/node/index.js:626:17)
-    at node_modules/superagent/lib/node/index.js:795:18
-    at IncomingMessage.<anonymous> (node_modules/superagent/lib/node/parsers/json.js:16:7)
-    at endReadableNT (_stream_readable.js:1129:12)
-    at process.internalTickCallback (internal/process/next_tick.js:72:19)]]></failure>
     </testcase>
   </testsuite>
 </testsuites>

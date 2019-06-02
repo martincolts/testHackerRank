@@ -7,7 +7,5 @@ const AsyncSave = require('../asyncSave/AsyncSave');
 // To complete
 ShopperPositionService.newPosition = async (shopperId, body) => {
   console.log(`Start ShopperPositionService.newPosition with body: ${JSON.stringify(body)}`);
-  console.log(shopperId);
-
   return AsyncSave.send(shopperId, body);
 };

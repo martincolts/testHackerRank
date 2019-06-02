@@ -23,20 +23,18 @@ const ShopperPositionService = require('../services/ShopperPositionService');
 ShopperPositionController.insert = (req, res) => {
   const { params: { shopperId } = {}, body } = req;
 
-  // eslint-disable-next-line no-restricted-globals,no-undef
-  if (!body.lat || !(typeof body.lat === 'number')) {
+  if ((typeof body.lat !== 'number')) {
     return res.status(400).send({ message: 'missing lat' });
   }
-  // eslint-disable-next-line no-restricted-globals
-  if (!body.lng || !(typeof body.lng === 'number')) {
+  if ((typeof body.lng !== 'number')) {
     return res.status(400).send({ message: 'missing lgn' });
   }
+  const id = +shopperId;
   // eslint-disable-next-line no-restricted-globals
-  if (!shopperId || !(typeof shopperId === 'number')) {
+  if (isNaN(id)) {
     return res.status(404).send({ message: 'missing shopperId' });
   }
-  console.log(`shopperId ${shopperId}`);
 
-  return ShopperPositionService.newPosition(shopperId, body)
+  return ShopperPositionService.newPosition(id, body)
     .then(() => res.send());
 };
