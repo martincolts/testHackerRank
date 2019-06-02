@@ -6,6 +6,11 @@ const ShoppersPositionRepository = require('../repositories/ShoppersPositionRepo
 // The send of the async function
 AsyncSave.send = (key, data) => {
   console.log(`AsyncSave send with key ${key}, and data: ${JSON.stringify(data)}`);
+  const newData = data;
+  newData.shopperId = key;
+
+  // eslint-disable-next-line new-cap
+  return new Promise.resolve(ShoppersPositionRepository.insert(newData));
 };
 
 // To complete

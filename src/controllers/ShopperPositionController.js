@@ -21,10 +21,22 @@ const ShopperPositionService = require('../services/ShopperPositionService');
  * @apiError (500) {Object} Error on internal runtime, should return nothing.
  */
 ShopperPositionController.insert = (req, res) => {
-  const { paramas: { shopperId } = {}, body } = req;
+  const { params: { shopperId } = {}, body } = req;
 
-  return ShopperPositionService.newPosition(shopperId, body).then(() => {
+  // eslint-disable-next-line no-restricted-globals,no-undef
+  if (!body.lat || !(typeof body.lat === 'number')) {
+    return res.status(400).send({ message: 'missing lat' });
+  }
+  // eslint-disable-next-line no-restricted-globals
+  if (!body.lng || !(typeof body.lng === 'number')) {
+    return res.status(400).send({ message: 'missing lgn' });
+  }
+  // eslint-disable-next-line no-restricted-globals
+  if (!shopperId || !(typeof shopperId === 'number')) {
+    return res.status(404).send({ message: 'missing shopperId' });
+  }
+  console.log(`shopperId ${shopperId}`);
 
-    return res.send()
-  });
+  return ShopperPositionService.newPosition(shopperId, body)
+    .then(() => res.send());
 };
