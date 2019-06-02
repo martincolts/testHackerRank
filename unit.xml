@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.063" tests="7" failures="0">
-  <testsuite name="Root Suite" timestamp="2019-06-02T20:35:16" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="0.056999999999999995" tests="7" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-06-02T20:51:11" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="test" timestamp="2019-06-02T20:35:16" tests="0" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="0" time="0">
+  <testsuite name="test" timestamp="2019-06-02T20:51:11" tests="0" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="0" time="0">
   </testsuite>
-  <testsuite name="healthcheck" timestamp="2019-06-02T20:35:16" tests="1" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="0" time="0.026">
-    <testcase name="test healthcheck success" time="0.026" classname="success">
+  <testsuite name="healthcheck" timestamp="2019-06-02T20:51:11" tests="1" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="0" time="0.019">
+    <testcase name="test healthcheck success" time="0.019" classname="success">
     </testcase>
   </testsuite>
-  <testsuite name="error handler" timestamp="2019-06-02T20:35:16" tests="3" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="0" time="0.019000000000000003">
-    <testcase name="test error handler 404" time="0.015" classname="404">
+  <testsuite name="error handler" timestamp="2019-06-02T20:51:11" tests="3" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="0" time="0.020999999999999998">
+    <testcase name="test error handler 404" time="0.016" classname="404">
     </testcase>
-    <testcase name="test error handler 400 empty body" time="0.002" classname="400 empty body">
+    <testcase name="test error handler 400 empty body" time="0.003" classname="400 empty body">
     </testcase>
     <testcase name="test error handler 400 body error" time="0.002" classname="400 body error">
     </testcase>
   </testsuite>
-  <testsuite name="endpoint" timestamp="2019-06-02T20:35:16" tests="3" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="0" time="0.018000000000000002">
+  <testsuite name="endpoint" timestamp="2019-06-02T20:51:11" tests="3" file="/home/mlopez/OtherProjects/shopper-position-nodejs-test-6b368bgt52d/test/unit/PositionServiceTest.js" failures="0" time="0.017">
     <testcase name="test endpoint 200" time="0.005" classname="200">
     </testcase>
-    <testcase name="test endpoint cache" time="0.012" classname="cache">
+    <testcase name="test endpoint cache" time="0.01" classname="cache">
     </testcase>
-    <testcase name="test endpoint async save" time="0.001" classname="async save">
+    <testcase name="test endpoint async save" time="0.002" classname="async save">
     </testcase>
   </testsuite>
 </testsuites>

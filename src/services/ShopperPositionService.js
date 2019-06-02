@@ -11,7 +11,7 @@ ShopperPositionService.newPosition = async (shopperId, body) => {
     Cache.save(shopperId, body);
 
     return AsyncSave.send(shopperId, body);
-  };
+  }
 
   return Cache.get(shopperId);
 };
