@@ -8,12 +8,14 @@ AsyncSave.send = (key, data) => {
   console.log(`AsyncSave send with key ${key}, and data: ${JSON.stringify(data)}`);
   const newData = data;
   newData.shopperId = key;
-  ShoppersPositionRepository.insert(newData);
+
+  return ShoppersPositionRepository.insert(newData);
 };
 
 // To complete
 // The receive of the async function
 AsyncSave.receive = (data) => {
   console.log(`AsyncSave receive, with data: ${JSON.stringify(data)}`);
-  ShoppersPositionRepository.insert(data);
+
+  return ShoppersPositionRepository.insert(data);
 };

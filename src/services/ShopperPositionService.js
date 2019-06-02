@@ -9,7 +9,7 @@ ShopperPositionService.newPosition = async (shopperId, body) => {
   console.log(Cache.get(shopperId));
   if (!Cache.get(shopperId)) {
     Cache.save(shopperId, body);
-git
+
     return AsyncSave.send(shopperId, body);
   };
 
